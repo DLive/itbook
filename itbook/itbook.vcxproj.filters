@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="rtf">
+      <UniqueIdentifier>{b978e094-4d14-48d7-951e-31a8fedf9820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="共用">
+      <UniqueIdentifier>{f807a92b-2b21-4b17-a968-5edf0952ad10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="同步">
+      <UniqueIdentifier>{6ef4811c-f55e-4cd4-ad14-b09914fc7dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{56c20202-dca4-4420-b160-5614df992d11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="控件自绘">
+      <UniqueIdentifier>{2f315765-54ff-48ab-8cf1-251fbbaced0b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CntrItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DLclassnamedlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DLcodeLight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DLsyn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DLupClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DLupToDistancedlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itbook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itbookDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itbookView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="itPropertySheet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KSFileDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myClassTreeDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myDocmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPropertySheet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="propertyDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="txtDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="txtView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlTxtView.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DLrtfTohtml.cpp">
+      <Filter>rtf</Filter>
+    </ClCompile>
+    <ClCompile Include="baseSet.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="Ccommon.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="classset.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="Conndb.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="CppSQLite3U.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="DLeasySearch.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="DLitbookTree.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="DLsyntaxHightLight.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="editBar.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="InputDB.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="localSearchResult.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="toolDlg.cpp">
+      <Filter>共用</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="DLlistdrop.cpp">
+      <Filter>控件自绘</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CntrItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DLclassnamedlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DLcodeLight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DLsyn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dlTxtView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DLupClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DLupToDistancedlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="editBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itbook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itbookDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itbookView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itPropertySheet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KSFileDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="myDocmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPropertySheet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="propertyDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="txtDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="txtView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DLrtfTohtml.h">
+      <Filter>rtf</Filter>
+    </ClInclude>
+    <ClInclude Include="baseSet.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="Ccommon.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="classset.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="CommResours.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="Conndb.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="CppSQLite3U.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="DLeasySearch.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="DLitbookTree.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="DLsyntaxHightLight.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDB.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="localSearchResult.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="myClassTreeDlg.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="toolDlg.h">
+      <Filter>共用</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json_batchallocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="DLlistdrop.h">
+      <Filter>控件自绘</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\file0.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\file1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\idr_itbo.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\itbook.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\itbook.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\itbookDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\itbooki.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\itbookt.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="json\json_internalarray.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="json\json_internalmap.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="json\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="document.txt" />
+    <None Include="itbook.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="itbook.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

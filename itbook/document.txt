@@ -1,0 +1,4 @@
+//定义视力改变消息
+
+#deinfe WM_MY_SETCLASSINIT  WM_USRER+110
+#define WM_MY_CHANGEINFO	WM_USER+110

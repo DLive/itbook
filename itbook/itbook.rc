@@ -1,0 +1,889 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\itbook.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""        // 打印/打印预览资源\r\n"
+    "#include ""l.CHS\\afxolecl.rc""        // OLE 容器资源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EXEICON             ICON                    "res\\itbooki.ico"
+IDR_MAINFRAME           ICON                    "res\\itbook.ico"
+IDR_itbookTYPE          ICON                    "res\\itbookDoc.ico"
+IDI_FILES0              ICON                    "res\\file0.ico"
+IDI_FILES1              ICON                    "res\\file1.ico"
+IDR_txtTYPE             ICON                    "res\\idr_itbo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_EDITBAR             BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_EDITBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FONTSIZE
+    BUTTON      ID_CHARBOLD
+    BUTTON      ID_CHARITALIC
+    BUTTON      ID_CHARUNDELINE
+    BUTTON      ID_CHARSTRIKEOUT
+    SEPARATOR
+    BUTTON      ID_PARA_LEFT
+    BUTTON      ID_PARA_CENTER
+    BUTTON      ID_PARA_RIGHT
+    SEPARATOR
+    BUTTON      ID_INSERT_NUMBERING
+    BUTTON      ID_INSERT_BULLET
+    SEPARATOR
+    BUTTON      ID_CHAR_COLOR
+    BUTTON      ID_CHAR_HIGHLIGHT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        POPUP "新建(&N)\tCtrl+N"
+        BEGIN
+            MENUITEM "新建tit文档",                     ID_NEWTITFILE
+            MENUITEM "新建txt文档",                     ID_NEWTXTFILE
+        END
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 itbook(&A)...",            ID_APP_ABOUT
+    END
+    POPUP "选项(&O)"
+    BEGIN
+        MENUITEM "设置(&S)",                      ID_SETPROPERTY
+        MENUITEM "更新分类",                        ID_UPCLASSONLINE
+    END
+END
+
+IDR_itbookTYPE MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        POPUP "新建(&N)\tCtrl+N"
+        BEGIN
+            MENUITEM "新建tit文档",                     ID_NEWTITFILE
+            MENUITEM "新建txt文档",                     ID_NEWTXTFILE
+        END
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "选择性粘贴(&S)...",                ID_EDIT_PASTE_SPECIAL
+        MENUITEM "全选(&L)\tCtrl+A",              ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "查找(&F)...\tCtrl+F",           ID_EDIT_FIND
+        MENUITEM "查找下一个(&I)\tF3",               ID_EDIT_REPEAT
+        MENUITEM "替换(&E)\tCtrl+H",              ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "插入新对象(&N)...",                ID_OLE_INSERT_NEW
+        MENUITEM "链接(&K)...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "对象属性\\tAlt+Enter(&R)",        ID_OLE_EDIT_PROPERTIES
+        MENUITEM "<<此处显示 OLE 谓词>>",             ID_OLE_VERB_FIRST
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "编辑栏(&E)",                     ID_EDITBAR
+        MENUITEM "搜索栏(&A)",                     ID_MSEARCH
+        MENUITEM "属性栏(&P)",                     ID_MPROPERTY
+        MENUITEM "显示行号(&L)",                    ID_DSPLLINENUM
+    END
+    POPUP "格式(&M)"
+    BEGIN
+        MENUITEM "字体颜色(&C)",                    ID_CHAR_COLOR
+        POPUP "样式(&S)"
+        BEGIN
+            MENUITEM "加粗(&B)",                      ID_CHARBOLD
+            MENUITEM "斜体(&I)",                      ID_CHARITALIC
+            MENUITEM "下划线(&U)",                     ID_CHARUNDELINE
+            MENUITEM "删除线(&D)",                     ID_CHARSTRIKEOUT
+        END
+        POPUP "对齐(&A)"
+        BEGIN
+            MENUITEM "左对齐(&L)",                     ID_PARA_LEFT
+            MENUITEM "居中(&I)",                      ID_PARA_CENTER
+            MENUITEM "右对齐(&R)",                     ID_PARA_RIGHT
+        END
+        POPUP "列表(&L)"
+        BEGIN
+            MENUITEM "有序列表(&O)",                    ID_INSERT_NUMBERING
+            MENUITEM "无序列表(&U)",                    ID_INSERT_BULLET
+        END
+        MENUITEM "字体高亮(&H)",                    ID_CHAR_HIGHLIGHT
+    END
+    POPUP "选项(&O)"
+    BEGIN
+        MENUITEM "设置(&S)",                      ID_SETPROPERTY
+        MENUITEM "更新分类",                        ID_UPCLASSONLINE
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                      ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                      ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 itbook(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_itbookTYPE_CNTR_IP MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        POPUP "新建(&N)\tCtrl+N"
+        BEGIN
+            MENUITEM "新建tit文档",                     ID_NEWTITFILE
+            MENUITEM "新建txt文档",                     ID_NEWTXTFILE
+        END
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                      ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                      ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                    ID_WINDOW_ARRANGE
+    END
+END
+
+IDR_ICONMENU MENU
+BEGIN
+    POPUP "托盘"
+    BEGIN
+        MENUITEM "显示主面板",                       ID_MAINSHOW
+        MENUITEM "退出",                          ID_MAINQUIT
+    END
+    POPUP "树菜单"
+    BEGIN
+        MENUITEM "添加分类(&A)",                    ID_TCLASSADD
+        MENUITEM "添加顶级类(&R)",                   ID_ADDROOTCLASS
+        MENUITEM "删除分类(&D)",                    ID_TCLASSDEL
+        MENUITEM "重命名(&N)",                     ID_CLASSRENAME
+        MENUITEM "上传该类文章",                      ID_UPCARTICLETODIS
+        MENUITEM "下载该类文章",                      ID_UPCARTICLETOLOC
+    END
+    POPUP "结果列表菜单"
+    BEGIN
+        MENUITEM "更新至远程",                       ID_UPTOSERVER
+        MENUITEM "更新至本地",                       ID_UPTOLOCAL
+    END
+END
+
+IDR_txtTYPE MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        POPUP "新建(&N)\tCtrl+N"
+        BEGIN
+            MENUITEM "新建tit文档",                     ID_NEWTITFILE
+            MENUITEM "新建txt文档",                     ID_NEWTXTFILE
+        END
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "选择性粘贴(&S)...",                ID_EDIT_PASTE_SPECIAL
+        MENUITEM "全选(&L)\tCtrl+A",              ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "查找(&F)...\tCtrl+F",           ID_EDIT_FIND
+        MENUITEM "查找下一个(&I)\tF3",               ID_EDIT_REPEAT
+        MENUITEM "替换(&E)\tCtrl+H",              ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "插入新对象(&N)...",                ID_OLE_INSERT_NEW
+        MENUITEM "链接(&K)...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "对象属性\\tAlt+Enter(&R)",        ID_OLE_EDIT_PROPERTIES
+        MENUITEM "<<此处显示 OLE 谓词>>",             ID_OLE_VERB_FIRST
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "编辑栏(&E)",                     ID_EDITBAR
+        MENUITEM "搜索栏(&A)",                     ID_MSEARCH
+        MENUITEM "属性栏(&P)",                     ID_MPROPERTY
+        MENUITEM "显示行号(&L)",                    ID_DSPLLINENUM
+    END
+    POPUP "格式(&M)"
+    BEGIN
+        MENUITEM "字体颜色(&C)",                    ID_CHAR_COLOR
+        POPUP "样式(&S)"
+        BEGIN
+            MENUITEM "加粗(&B)",                      ID_CHARBOLD
+            MENUITEM "斜体(&I)",                      ID_CHARITALIC
+            MENUITEM "下划线(&U)",                     ID_CHARUNDELINE
+            MENUITEM "删除线(&D)",                     ID_CHARSTRIKEOUT
+        END
+        POPUP "对齐(&A)"
+        BEGIN
+            MENUITEM "左对齐(&L)",                     ID_PARA_LEFT
+            MENUITEM "居中(&I)",                      ID_PARA_CENTER
+            MENUITEM "右对齐(&R)",                     ID_PARA_RIGHT
+        END
+        POPUP "列表(&L)"
+        BEGIN
+            MENUITEM "有序列表(&O)",                    ID_INSERT_NUMBERING
+            MENUITEM "无序列表(&U)",                    ID_INSERT_BULLET
+        END
+        MENUITEM "字体高亮(&H)",                    ID_CHAR_HIGHLIGHT
+    END
+    POPUP "选项(&O)"
+    BEGIN
+        MENUITEM "设置(&S)",                      ID_SETPROPERTY
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                      ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                      ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 itbook(&A)...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY 
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY, ALT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+IDR_itbookTYPE_CNTR_IP ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 itbook"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_EXEICON,IDC_STATIC,12,17,18,18
+    LTEXT           "itbook笔记管理, Version 0.0.1.1",IDC_STATIC,37,12,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,36,35,72,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+    LTEXT           "作者:DoubleLive QQ：329015523",IDC_STATIC,36,24,106,8
+END
+
+IDD_TOOLDLG DIALOGEX 0, 0, 120, 319
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TITLE,32,16,84,14,ES_AUTOHSCROLL
+    LTEXT           "(关键字用空隔分离）",IDC_STATIC,41,2,76,13
+    LTEXT           "关键字",IDC_STATIC,5,19,25,8
+    PUSHBUTTON      "本地搜索",IDC_LOCALSER,19,32,77,18
+    LTEXT           "笔记搜索",IDC_STATIC,3,3,32,8
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,304,118,14
+END
+
+IDD_LOCALRESULT DIALOGEX 0, 0, 298, 388
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "搜索",IDC_LOCALSER,123,5,36,14
+    LTEXT           "关键字",IDC_STATIC,3,8,25,8
+    EDITTEXT        IDC_SEARCHKEY,29,5,92,14,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    CONTROL         "",IDC_RESULT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,126,22,168,347
+    PUSHBUTTON      "删除选中",IDC_DELETE,240,4,50,14
+    CONTROL         "同时删除本地文件",IDC_DELLOCALFILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,161,6,78,10
+    CONTROL         "",IDC_RESULTCLASTREE,"SysTreeView32",TVS_EDITLABELS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,0,28,123,356
+    PUSHBUTTON      "前一页",IDC_PREPAGE,133,371,50,14
+    PUSHBUTTON      "后一页",IDC_AFTERPAGE,233,371,50,14
+    COMBOBOX        IDC_JMPPAGE,195,372,27,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPERTY DIALOGEX 0, 0, 671, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_POSITON,497,2,51,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "类别",IDC_STATIC,145,4,17,8
+    LTEXT           "位置",IDC_STATIC,480,4,17,8
+    COMBOBOX        IDC_NOWCLASSNAME,164,2,79,12,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "标题",IDC_STATIC,6,4,17,8
+    EDITTEXT        IDC_TITLE,25,2,114,12,ES_AUTOHSCROLL
+    LTEXT           "作者",IDC_STATIC,250,4,17,8
+    EDITTEXT        IDC_AUTHOR,268,2,53,12,ES_AUTOHSCROLL
+    LTEXT           "难度",IDC_STATIC,328,4,17,8
+    LTEXT           "关键字",IDC_STATIC,379,4,25,8
+    EDITTEXT        IDC_KEYWORD,405,2,69,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DIFFICULTY,346,2,28,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "存入数据库",IDC_INSERTTODB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,554,5,52,8
+    CONTROL         "存本地文件",IDC_SAVELOCAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,607,4,56,10
+END
+
+IDD_CLASSSET DIALOGEX 0, 0, 309, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "分类设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "类名:",IDC_STATIC,17,20,20,8
+    GROUPBOX        "添加分类",IDC_STATIC,8,4,270,35
+    EDITTEXT        IDC_ADDCLASSNAME,41,17,63,14,ES_AUTOHSCROLL
+    LTEXT           "父类:",IDC_STATIC,109,20,20,8
+    PUSHBUTTON      "添加",IDC_ADDCLASS,209,17,50,14
+    COMBOBOX        IDC_ADDFCLASS,129,18,67,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "删除分类",IDC_STATIC,9,45,270,40
+    COMBOBOX        IDC_DELCLASS,16,56,67,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "同时删除文章",IDC_DELARTICLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,58,64,10
+    LTEXT           "提示:删除顶级类，将同时删除子类",IDC_STATIC,17,72,124,8
+    PUSHBUTTON      "删除",IDC_DEL,166,62,50,14
+    GROUPBOX        "修改类名",IDC_STATIC,10,90,269,31
+    COMBOBOX        IDC_CHANGECLASS,16,101,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "修改为:",IDC_STATIC,86,104,28,8
+    EDITTEXT        IDC_CHANGEASCLASS,114,101,71,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",IDC_CHANGE,199,101,50,14
+    GROUPBOX        "修改父类",IDC_STATIC,9,125,270,35
+    COMBOBOX        IDC_FATHERCHANG,17,138,65,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FATHER,127,138,74,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "请选择父类",IDC_STATIC,85,140,41,8
+    PUSHBUTTON      "修改",IDC_CHANGEFATHER,205,137,50,14
+END
+
+IDD_BASEPROPERTY DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "基本设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "开机自动运行",IDC_AUTORUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,12,64,10
+    CONTROL         "关联txt文件",IDC_RELATIONTXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,27,67,10
+END
+
+IDD_CLASSTREEDLG DIALOGEX 0, 0, 106, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CLASSDLGTREE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,0,0,106,180
+END
+
+IDD_CLASSNAME DIALOGEX 0, 0, 176, 38
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置分类名"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,114,9,50,14
+    EDITTEXT        IDC_CLASSNAME,37,9,74,14,ES_AUTOHSCROLL
+    LTEXT           "分类名:",IDC_STATIC,7,12,28,8
+END
+
+IDD_EASYSEARCH DIALOGEX 0, 0, 130, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,0,0,129,136
+END
+
+IDD_UPTODISTANCEDLG DIALOGEX 0, 0, 139, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "上传更新文章"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,15,49,50,14
+    PUSHBUTTON      "取消",IDCANCEL,78,49,50,14
+    COMBOBOX        IDC_STATUS,49,21,56,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "文章状态",IDC_STATIC,11,23,33,8
+END
+
+IDD_CLASSUPDATE DIALOGEX 0, 0, 341, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,284,165,50,14
+    CONTROL         "",IDC_CLASSLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,23,332,138
+    COMBOBOX        IDC_DCLASSLIST,46,164,84,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "修改成：",IDC_STATIC,10,167,33,11
+    LTEXT           "请选择要修改的分类（按CTRL可进行多选）",IDC_STATIC,8,10,154,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,3,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "ItBaby团队"
+            VALUE "FileDescription", "ItBaby笔记管理"
+            VALUE "FileVersion", "1, 0, 3, 0"
+            VALUE "InternalName", "itbaby.exe"
+            VALUE "LegalCopyright", "千里花舞·保留所有权利。"
+            VALUE "OriginalFilename", "ItBaby.exe"
+            VALUE "ProductName", "ItBaby"
+            VALUE "ProductVersion", "1, 0, 3, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_TOOLDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 118
+    END
+
+    IDD_LOCALRESULT, DIALOG
+    BEGIN
+        TOPMARGIN, 3
+    END
+
+    IDD_PROPERTY, DIALOG
+    BEGIN
+        TOPMARGIN, 2
+    END
+
+    IDD_EASYSEARCH, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_UPTODISTANCEDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_CLASSUPDATE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 316
+        BOTTOMMARGIN, 180
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDP_FAILED_TO_CREATE    "未能创建对象。确保对象已输入系统注册表。"
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ItBaby笔记管理"
+    IDR_itbookTYPE          "\nitbook\nitbook\nitbook Files (*.tit)\n.tit\nittit.Document\nitbook笔记"
+    IDR_txtTYPE             "\nitbook\nitbook\nitbook Files (*.txt)\n.txt\nittxt.Document\nitbook笔记"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "itbook"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_PASTE_LINK      "插入剪贴板内容以及其源的链接\n粘贴链接"
+    ID_EDIT_PASTE_SPECIAL   "有选择地插入剪贴板内容\n选择性粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OLE_INSERT_NEW       "插入新的嵌入对象\n新建对象"
+    ID_OLE_EDIT_LINKS       "编辑链接对象\n编辑链接"
+    ID_OLE_EDIT_CONVERT     "将对象转换为其他类型\n转换对象"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OLE_VERB_FIRST       "激活嵌入对象或链接对象"
+    57873                   "激活嵌入对象或链接对象"
+    57874                   "激活嵌入对象或链接对象"
+    57875                   "激活嵌入对象或链接对象"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FONTSIZE             "字体大小\n大小"
+    ID_CHARBOLD             "使字体加粗\n加粗"
+    ID_CHARITALIC           "斜体\n斜体"
+    ID_CHARUNDELINE         "下划线\n下划线"
+    ID_CHARSTRIKEOUT        "删除线\n删除线"
+    ID_PARA_LEFT            "左对齐\n左对齐"
+    ID_PARA_CENTER          "居中\n居中"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PARA_RIGHT           "右对齐\n右对齐"
+    ID_INSERT_NUMBERING     "有序列表\n有序列表"
+    ID_INSERT_BULLET        "无序列表\n无序列表"
+    ID_CHAR_HIGHLIGHT       "高亮\ny高亮"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CHAR_COLOR           "字体颜色\n字体颜色"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DSPLLINENUM          "显示或隐藏行号\n切换行号"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\itbook.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#include "l.CHS\afxprint.rc"        // 打印/打印预览资源
+#include "l.CHS\afxolecl.rc"        // OLE 容器资源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
